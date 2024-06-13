@@ -1,0 +1,27 @@
+{
+  "name": "viajados-tur",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "bootstrap": "^5.3.3",
+    "express": "^4.19.2",
+    "sqlite3": "^5.1.7"
+  },
+  "description": "Para usarlo, ve a la página de inicio de sesión e ingresa el usuario Jonathan y la contraseña 123456. Si la contraseña se ingresa incorrectamente, se bloqueará el acceso por un rato. Si ingresas las credenciales correctamente, se te pedirá que completes algunos datos personales. Después de completar los datos, se te dirigirá a una página HTML donde podrás realizar cálculos en una calculadora y crear un plan de financiación.",
+  "keywords": [],
+  "author": "Jonathan-garcia-baliani",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jonathan-garcia-baliani/jsConsole.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Jonathan-garcia-baliani/jsConsole/issues"
+  },
+  "homepage": "https://github.com/Jonathan-garcia-baliani/jsConsole#readme"
+}
+

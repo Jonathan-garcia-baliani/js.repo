@@ -1,0 +1,52 @@
+// Variables para estilos
+$calculator-border-color: #333;
+$calculator-bg-color: #201d1d;
+$calculator-padding: 10px;
+$calculator-border-radius: 8px;
+$calculator-width: 250px; // Ancho de la calculadora
+$button-size: 50px; // Tamaño de los botones
+$button-margin: 5px; // Margen alrededor de los botones
+
+.calculator-simple {
+    position:center ;
+    right: 10px; // Alinea la calculadora simple a la derecha
+    top: 20%; // Posiciona la calculadora simple 20% hacia abajo desde el top
+    border: 1px solid $calculator-border-color;
+    padding: $calculator-padding;
+    border-radius: $calculator-border-radius;
+    text-align: center;
+    background-color: $calculator-bg-color;
+    width: $calculator-width; // Ancho de la calculadora simple
+
+    // Estilos para el display
+    #displaySimple {
+        width: 100%; // El display ocupa todo el ancho del contenedor
+        height: 35px; // Altura del display
+        font-size: 18px;
+        margin-bottom: $button-margin; // Margen inferior para separar del teclado
+        padding: 5px;
+        text-align: right; // Alinea el texto a la derecha
+    }
+
+    // Estilos para los botones
+    .buttons {
+        display: grid; // Utiliza un grid para organizar los botones
+        grid-template-columns: repeat(4, 1fr); // 4 columnas de tamaño igual
+        gap: $button-margin; // Espacio entre los botones
+
+        button {
+            width: $button-size; // Ancho del botón
+            height: $button-size; // Altura del botón
+            font-size: 18px;
+            border: 1px solid $calculator-border-color;
+            border-radius: $calculator-border-radius;
+            background-color: #e0e0e0; // Color de fondo de los botones
+            cursor: pointer;
+
+            // Efecto de cambio de color al pasar el cursor
+            &:hover {
+                background-color: #444040;
+            }
+        }
+    }
+}
